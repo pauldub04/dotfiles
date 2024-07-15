@@ -28,7 +28,10 @@ git submodule update --init --recursive
 1) install [gnu stow](https://www.gnu.org/software/stow/)
 2) create links to ~
 ```bash
+# add links
 stow -R -v -t ~ .
+# remove links
+stow -D -v -t ~ .
 ```
 here .git, gitmodules and README are ignored by stow, but .gitconfig is my actual config
 
