@@ -16,8 +16,15 @@ git submodule update --init --recursive
 
 ## tmux
 1) install [tmux](https://github.com/tmux/tmux)
-2) install [tpm]
+2) install some [nerd font](https://www.nerdfonts.com/font-downloads) like JetBrains Nerd for catppuccin
 
+## vim
+1) install vim and nvim
+
+## gdb
+1) install gdb
+
+here .git, gitmodules and README are ignored by stow, but .gitconfig is my actual config
 
 1) install [gnu stow](https://www.gnu.org/software/stow/)
 2) create links to ~
