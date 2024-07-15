@@ -8,6 +8,7 @@ git submodule update --init --recursive
 
 ## terminal
 1) install [alacritty](https://github.com/alacritty/alacritty) (version >= 0.13.0 because need .toml config)
+2) install some [nerd font](https://www.nerdfonts.com/font-downloads) like JetBrains Nerd for using themes
 
 ## shell
 1) install and active zsh
@@ -16,7 +17,6 @@ git submodule update --init --recursive
 
 ## tmux
 1) install [tmux](https://github.com/tmux/tmux)
-2) install some [nerd font](https://www.nerdfonts.com/font-downloads) like JetBrains Nerd for catppuccin
 
 ## vim
 1) install vim and nvim
