@@ -7,7 +7,7 @@ git submodule update --init --recursive
 ```
 
 ## terminal
-1) install [alacritty](https://github.com/alacritty/alacritty)
+1) install [alacritty](https://github.com/alacritty/alacritty) (version >= 0.13.0 because need .toml config)
 
 ## shell
 1) install and active zsh
