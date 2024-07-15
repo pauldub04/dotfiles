@@ -15,14 +15,10 @@ git submodule update --init --recursive
 2) install [oh my zsh](https://ohmyz.sh/)
 3) install [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
-## tmux
+## rest
 1) install [tmux](https://github.com/tmux/tmux)
-
-## vim
-1) install vim and nvim
-
-## gdb
-1) install gdb
+2) install vim and nvim
+3) install gdb
 
 ## stow
 1) install [gnu stow](https://www.gnu.org/software/stow/)
