@@ -1,6 +1,6 @@
 # dotfiles
 
-1) install [https://www.gnu.org/software/stow/] (gnu stow)
+1) install [gnu stow](https://www.gnu.org/software/stow/)
 ```bash
 sudo stow . --adopt
 ```
