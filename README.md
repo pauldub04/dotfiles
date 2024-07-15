@@ -24,8 +24,8 @@ git submodule update --init --recursive
 ## gdb
 1) install gdb
 
-here .git, gitmodules and README are ignored by stow, but .gitconfig is my actual config
 
+here .git, gitmodules and README are ignored by stow, but .gitconfig is my actual config
 1) install [gnu stow](https://www.gnu.org/software/stow/)
 2) create links to ~
 ```bash
