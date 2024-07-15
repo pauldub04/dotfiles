@@ -1,5 +1,11 @@
 # dotfiles
 
+```bash
+git clone https://github.com/pauldub04/dotfiles/
+cd dotfiles
+git submodule update --init --recursive
+```
+
 ## terminal
 1) install [alacritty](https://github.com/alacritty/alacritty)
 
@@ -11,6 +17,7 @@
 ## tmux
 1) install [tmux](https://github.com/tmux/tmux)
 2) install [tpm]
+
 
 1) install [gnu stow](https://www.gnu.org/software/stow/)
 2) create links to ~
