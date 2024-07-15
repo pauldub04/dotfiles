@@ -24,10 +24,19 @@ git submodule update --init --recursive
 ## gdb
 1) install gdb
 
-
-here .git, gitmodules and README are ignored by stow, but .gitconfig is my actual config
+## stow
 1) install [gnu stow](https://www.gnu.org/software/stow/)
 2) create links to ~
 ```bash
 sudo stow . --adopt
 ```
+here .git, gitmodules and README are ignored by stow, but .gitconfig is my actual config
+
+## after stow
+1) load tmux conf
+```bash
+tmux source-file ~/.config/tmux/tmux.conf
+tmux
+# prefix + I to install tpm plugins
+```
+2) 
