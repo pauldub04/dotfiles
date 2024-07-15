@@ -1,0 +1,18 @@
+[submodule ".config/alacritty/catppuccin"]
+	path = .config/alacritty/catppuccin
+	url = https://github.com/alacritty/alacritty-theme
+[submodule ".config/alacritty/themes"]
+	path = .config/alacritty/themes
+	url = https://github.com/alacritty/alacritty-theme
+[submodule ".config/tmux/plugins/tmux-sensible"]
+	path = .config/tmux/plugins/tmux-sensible
+	url = https://github.com/tmux-plugins/tmux-sensible
+[submodule ".config/tmux/plugins/tmux-themepack"]
+	path = .config/tmux/plugins/tmux-themepack
+	url = https://github.com/jimeh/tmux-themepack
+[submodule ".config/tmux/plugins/tmux-yank"]
+	path = .config/tmux/plugins/tmux-yank
+	url = https://github.com/tmux-plugins/tmux-yank
+[submodule ".config/tmux/plugins/tpm"]
+	path = .config/tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm

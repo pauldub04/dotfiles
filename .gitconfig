@@ -1,0 +1,13 @@
+[user]
+	email = paul.dubnyakov@gmail.com
+	name = pauldub04
+
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	cm = commit -m
+
+[credential]
+	helper = store

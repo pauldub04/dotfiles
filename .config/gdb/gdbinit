@@ -1,0 +1,12 @@
+set auto-load safe-path /
+set debuginfod enabled on
+set can-use-hw-watchpoints 0
+
+#layout asm
+#layout reg
+#set pagination off
+#focus cmd
+
+#source ~/peda/peda.py
+source /home/pasha/.gdbinit-gef.py
+

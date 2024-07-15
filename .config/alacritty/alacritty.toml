@@ -1,0 +1,26 @@
+import = [
+    "~/.config/alacritty/catppuccin/catppuccin-mocha.toml",
+    "~/.config/alacritty/themes/themes/dracula_plus.toml"
+]
+
+live_config_reload = true
+
+[env]
+TERM = "xterm-256color"
+
+[keyboard]
+bindings = [
+    { key = "v", mods = "Control", action = "paste" },
+    { key = "Backspace", mods = "Control", chars = "\u0017" }
+]
+
+[window]
+padding.x = 20
+padding.y = 20
+startup_mode = "maximized"
+opacity = 0.98
+
+[font]
+normal.family = "JetBrainsMono Nerd Font"
+size = 12.0
+
