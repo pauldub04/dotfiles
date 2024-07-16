@@ -11,6 +11,7 @@
 
 [credential]
 	helper = /usr/local/bin/git-credential-manager
+	credentialStore = gpg
 
 [credential "https://dev.azure.com"]
 	useHttpPath = true
