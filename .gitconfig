@@ -10,4 +10,7 @@
 	cm = commit -m
 
 [credential]
-	helper = store
+	helper = /usr/local/bin/git-credential-manager
+
+[credential "https://dev.azure.com"]
+	useHttpPath = true
