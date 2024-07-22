@@ -1,0 +1,26 @@
+# NOTE: you can use vars with $<var> and ${<var>} as long as the str is double quoted: ""
+# WARNING: hex colors can't contain capital letters
+
+# made from .config/alacritty/themes/themes/dracula_plus.toml
+# --> Catppuccin (dracula)
+
+# bar color
+thm_bg="#212121"
+# text color
+thm_fg="#f8f8f2"
+# tabs bg color
+thm_gray="#545454"
+
+thm_primary="#82aaff"
+thm_green="#82aaff"
+thm_red="#ff6e6e"
+
+# UNUSED
+thm_cyan="#89dceb"
+thm_black="#181825"
+thm_magenta="#cba6f7"
+thm_pink="#f5c2e7"
+thm_yellow="#f9e2af"
+thm_blue="#89b4fa"
+thm_orange="#fab387"
+thm_black4="#585b70"
