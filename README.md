@@ -15,8 +15,14 @@ git submodule update --init --recursive
 2) install [oh my zsh](https://ohmyz.sh/)
 3) install [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
-## rest
+## tmux
 1) install [tmux](https://github.com/tmux/tmux)
+2) install [tpm](https://github.com/tmux-plugins/tpm)
+   ```bash
+   git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+   ```
+
+## rest
 2) install vim and nvim
 3) install gdb
 
