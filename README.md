@@ -45,10 +45,12 @@ git clone https://github.com/pauldub04/dotfiles/
 
    ```bash
    cd dotfiles
-   stow --adopt -v -t ~ .
    # --adopt will replace existing files with links to dotfiles, create backups them if needed
+   stow --adopt -v -t ~ .
    # -R to restow
+   stow -R -v -t ~ .
    # -D to delete links
+   stow -D -v -t ~ .
    ```
    here .git and README are ignored by stow, but .gitconfig is my actual config
 3) some files might have changed because of `--adopt` leading to overwriting configs. to fix it run
