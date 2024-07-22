@@ -63,9 +63,16 @@ git clone https://github.com/pauldub04/dotfiles/
 just reopen terminal to make changes work
 
 #### tmux
-load tmux conf
-```bash
-tmux
-tmux source-file ~/.config/tmux/tmux.conf
-# prefix + I to install tpm plugins
-```
+1) load tmux conf
+
+   ```bash
+   tmux
+   tmux source-file ~/.config/tmux/tmux.conf
+   # prefix + I to install tpm plugins
+   ```
+2) copy theme to catppuccine
+
+   ```bash
+   cp other/catppuccin_dracula.tmuxtheme ~/.config/tmux/plugins/tmux/themes/
+   ```
+3) again load tmux conf
