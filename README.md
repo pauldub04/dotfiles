@@ -8,7 +8,13 @@ git submodule update --init --recursive
 
 ## terminal
 1) install [alacritty](https://github.com/alacritty/alacritty) (version >= 0.13.0 because need .toml config)
-2) install some [nerd font](https://www.nerdfonts.com/font-downloads) like JetBrains Nerd for using themes
+2) install [alacritty themes](https://github.com/alacritty/alacritty-theme)
+
+   ```bash
+   mkdir -p ~/.config/alacritty/themes
+   git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
+   ```
+3) install some [nerd font](https://www.nerdfonts.com/font-downloads) like JetBrains Nerd for using themes
 
 ## shell
 1) install and active zsh
