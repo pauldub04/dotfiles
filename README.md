@@ -17,7 +17,8 @@ git submodule update --init --recursive
 
 ## tmux
 1) install [tmux](https://github.com/tmux/tmux)
-2) install [tpm](https://github.com/tmux-plugins/tpm)\
+2) install [tpm](https://github.com/tmux-plugins/tpm)
+   
    ```bash
    git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
    ```
