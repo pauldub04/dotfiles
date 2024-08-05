@@ -16,7 +16,7 @@ git clone https://github.com/pauldub04/dotfiles/
 3) install some [nerd font](https://www.nerdfonts.com/font-downloads) like JetBrains Nerd for using themes
 
 #### zsh
-1) install and active [zsh](https://www.zsh.org/)
+1) install and active [zsh](https://www.zsh.org/). do not forget that logout or reboot needed after changing shell
 2) install [oh my zsh](https://ohmyz.sh/)
 3) install plugins and themes
 
