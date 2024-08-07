@@ -86,3 +86,8 @@ Links about ssh and git:
 - https://wiki.archlinux.org/title/SSH_keys
 - https://bbs.archlinux.org/viewtopic.php?pid=2022565#p2022565
 - https://github.com/White-Oak/arch-setup-for-dummies/blob/master/setting-up-ssh-agent.md
+
+to test connection to github:
+```bash
+ssh -T git@github.com
+```
