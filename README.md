@@ -79,3 +79,10 @@ just reopen terminal to make changes work
    cp other/catppuccin_dracula.tmuxtheme ~/.config/tmux/plugins/tmux/themes/
    ```
 3) again load tmux conf
+
+### git
+Now using git over ssh instead of login+password. Generated keys with `ssh-keygen`. Using [ssh-agent](https://wiki.archlinux.org/title/SSH_keys#ssh-agent) as agent. Starting it with systemd with `systemctl --user enable --now ssh-agent` without any additional configs. And changing `$SSH_AUTH_SOCK` variable (already done in .zshrc). Then keys are added to agent with `ssh-add` and published to github account seetings. \
+Links about ssh and git:
+- https://wiki.archlinux.org/title/SSH_keys
+- https://bbs.archlinux.org/viewtopic.php?pid=2022565#p2022565
+- https://github.com/White-Oak/arch-setup-for-dummies/blob/master/setting-up-ssh-agent.md
