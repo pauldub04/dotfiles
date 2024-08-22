@@ -1,6 +1,7 @@
 [user]
 	email = paul.dubnyakov@gmail.com
 	name = pauldub04
+	signingkey = /home/pasha/.ssh/id_ed25519.pub
 
 [alias]
 	co = checkout
@@ -18,4 +19,7 @@
 
 [url "ssh://git@gitlab.manytask.org/"]
 	insteadOf = https://gitlab.manytask.org/
+
+[gpg]
+	format = ssh
 
