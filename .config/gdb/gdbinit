@@ -8,5 +8,5 @@ set can-use-hw-watchpoints 0
 #focus cmd
 
 #source ~/peda/peda.py
-source /home/pasha/.gdbinit-gef.py
+#source /home/pasha/.gdbinit-gef.py
 
