@@ -16,4 +16,5 @@
     "vim.useSystemClipboard": true,
     "makefile.configureOnOpen": false,
     "diffEditor.ignoreTrimWhitespace": true,
+    "C_Cpp.intelliSenseEngine": "disabled",
 }

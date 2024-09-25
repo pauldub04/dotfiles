@@ -31,5 +31,32 @@
         "key": "ctrl+d",
         "command": "editor.action.copyLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+f9",
+        "command": "-editor.debug.action.toggleInlineBreakpoint",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+f9",
+        "command": "-settings.action.showContextMenu",
+        "when": "inSettingsEditor"
+    },
+    {
+        "key": "shift+f9",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.files.save",
+                "workbench.action.terminal.focus",
+                {
+                    "command": "workbench.action.terminal.sendSequence",
+                    "args": { "text": "\u0003" }
+                },
+                "workbench.action.terminal.clear",
+                "workbench.action.debug.start",
+                // "workbench.action.terminal.kill",
+            ]
+        }
     }
 ]
