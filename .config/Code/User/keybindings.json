@@ -22,15 +22,25 @@
             ]
         }
     },
-    {
-        "key": "ctrl+d",
-        "command": "-editor.action.addSelectionToNextFindMatch",
-        "when": "editorFocus"
+    { 
+        "key": "shift+f10",
+        "command": "cmake.ctest",
+        "when": "config.workspaceKeybindings.cmake_test.enabled"
+    },
+    { 
+        "key": "shift+f10",
+        "command": "cmake.build",
+        "when": "config.workspaceKeybindings.cmake_build.enabled"
     },
     {
-        "key": "ctrl+d",
-        "command": "editor.action.copyLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly"
+       "key": "ctrl+d",
+       "command": "-editor.action.addSelectionToNextFindMatch",
+       "when": "editorFocus"
+    },
+    {
+       "key": "ctrl+d",
+       "command": "editor.action.copyLinesDownAction",
+       "when": "editorTextFocus && !editorReadonly"
     },
     {
         "key": "shift+f9",

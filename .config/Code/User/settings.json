@@ -1,0 +1,46 @@
+{
+    "window.zoomLevel": 1,
+    "editor.fontFamily": "'JetBrains Mono', 'monospace', monospace",
+    "editor.fontSize": 14,
+    "editor.minimap.enabled": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.detectIndentation": true,
+    "editor.inlayHints.enabled": "off",
+    "workbench.startupEditor": "none",
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "clangd.path": "/usr/bin/clangd",
+
+    // "go.coverOnSave": true,
+    // "go.coverOnSingleTest": true
+
+    "keyboard.dispatch": "keyCode", 
+    "vim.useSystemClipboard": true,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+
+    "makefile.configureOnOpen": false,
+    "cmake.showOptionsMovedNotification": false,
+
+    "redhat.telemetry.enabled": false,
+    "telemetry.telemetryLevel": "off",
+
+    "diffEditor.ignoreTrimWhitespace": true,
+    "git.openRepositoryInParentFolders": "always",
+    
+    "dev.containers.gitCredentialHelperConfigLocation": "none",
+    "dev.containers.copyGitConfig": false,
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "terminal.integrated.commandsToSkipShell": [
+        "matlab.interrupt"
+    ],
+    "editor.stickyScroll.enabled": false,
+    "explorer.confirmPasteNative": false,
+
+}
