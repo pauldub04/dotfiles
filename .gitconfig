@@ -16,9 +16,13 @@
 
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
+[url "ssh://git@gitlab.com/"]
+    insteadOf = https://gitlab.com/
 
 [url "ssh://git@gitlab.manytask.org/"]
 	insteadOf = https://gitlab.manytask.org/
+[url "ssh://git@gitlab.ozon.dev/"]
+	insteadOf = https://gitlab.ozon.dev/
 
 [gpg]
 	format = ssh
