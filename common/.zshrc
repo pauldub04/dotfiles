@@ -16,10 +16,10 @@ export ZSH="/home/$USER/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
-#ZSH_THEME="terminalparty"
-#bira
-#gallois
-#jtriley
+# terminalparty
+# bira
+# gallois
+# jtriley
 
 
 # Set list of themes to pick from when loading at random
@@ -81,10 +81,11 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	git
 	zsh-autosuggestions
   zsh-vi-mode
   # zsh-syntax-highlighting
+  git
+  docker
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -117,8 +118,10 @@ fi
 
 alias cls="clear"
 
+# for vscode terminal
 [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
 
+# ssh agent for arch
 if [ -z "$SSH_CONNECTION" ] && [ -z "$SSH_AUTH_SOCK" ]; then
   export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 fi
