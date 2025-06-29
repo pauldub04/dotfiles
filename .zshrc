@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/pasha/.oh-my-zsh"
+export ZSH="/home/$USER/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -83,8 +83,8 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(
 	git
 	zsh-autosuggestions
-    zsh-vi-mode
-#    zsh-syntax-highlighting
+  zsh-vi-mode
+  # zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -119,8 +119,8 @@ alias cls="clear"
 
 [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
 
-if [[ -z "${SSH_CONNECTION}" ]]; then
-    export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+if [ -z "$SSH_CONNECTION" ] && [ -z "$SSH_AUTH_SOCK" ]; then
+  export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 fi
 
 # add go bins to path
