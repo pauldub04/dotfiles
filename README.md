@@ -29,9 +29,14 @@ sudo apt install tmux vim neovim git xclip stow
 4) install plugins and themes
 
    ```bash
-   git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
-   git clone https://github.com/jeffreytse/zsh-vi-mode ~/.oh-my-zsh/plugins/zsh-vi-mode
-   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/themes/powerlevel10k
+   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM}/plugins/zsh-autosuggestions
+   git clone https://github.com/jeffreytse/zsh-vi-mode ${ZSH_CUSTOM}/plugins/zsh-vi-mode
+   git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM}/plugins/zsh-syntax-highlighting
+   
+   # for arc
+   git clone https://github.com/mafredri/zsh-async ${ZSH_CUSTOM}/plugins/async
+
+   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM}/themes/powerlevel10k
    ```
    I dont use any plugin managers right now and dont want to make plugins as submodules. If any other plugins will appear in `.zshrc`, oh-my-zsh will tell me to download them manually
 
