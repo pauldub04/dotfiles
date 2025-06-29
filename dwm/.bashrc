@@ -27,4 +27,3 @@ fi
 unset rc
 
 set -o vi
-

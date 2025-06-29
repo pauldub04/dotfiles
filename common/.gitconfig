@@ -10,9 +10,9 @@
 	br = branch
 	cm = commit -m
 
-#[credential]
-#	helper = /usr/local/bin/git-credential-manager
-#	credentialStore = gpg
+# [credential]
+# 	helper = /usr/local/bin/git-credential-manager
+# 	credentialStore = gpg
 
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
@@ -28,4 +28,3 @@
 
 [gpg]
 	format = ssh
-

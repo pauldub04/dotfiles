@@ -9,4 +9,3 @@ set can-use-hw-watchpoints 0
 
 #source ~/peda/peda.py
 #source /home/pasha/.gdbinit-gef.py
-

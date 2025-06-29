@@ -126,6 +126,10 @@ fi
 # add go bins to path
 export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
 
+# add specific commands for work or home profiles 
+if [[ -f "${ZDOTDIR:-$HOME}/.zshrc.local" ]]; then
+    source "${ZDOTDIR:-$HOME}/.zshrc.local"
+fi
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
