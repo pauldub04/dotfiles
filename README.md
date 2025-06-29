@@ -1,23 +1,30 @@
 # dotfiles
 ```bash
-git clone https://github.com/pauldub04/dotfiles/
+git clone https://github.com/pauldub04/dotfiles/ ~/dotfiles
 ```
 
-## before stow
+## installing everything
+for ubuntu/debian
+```bash
+sudo apt install tmux vim neovim git xclip stow
+```
 
-#### terminal
-1) install [alacritty](https://github.com/alacritty/alacritty) (version >= 0.13.0 because need .toml config)
+## preraring
+
+### terminal
+1) install [alacritty](https://github.com/alacritty/alacritty) \
+   version >= 0.13.0 because we need .toml config
 2) install [alacritty themes](https://github.com/alacritty/alacritty-theme)
 
    ```bash
    mkdir -p ~/.config/alacritty/themes
    git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
    ```
-3) install some [nerd font](https://www.nerdfonts.com/font-downloads) like JetBrains Nerd for using themes
+3) install some [nerd font](https://www.nerdfonts.com/font-downloads) like JetBrains Nerd
 
-#### zsh
-1) install and active [zsh](https://www.zsh.org/) \
-   do not forget that logout or reboot needed after changing shell
+### zsh
+1) install and activate [zsh](https://www.zsh.org/) \
+   do not forget that logout or reboot is needed after changing shell
 3) install [oh my zsh](https://ohmyz.sh/)
 4) install plugins and themes
 
@@ -26,17 +33,18 @@ git clone https://github.com/pauldub04/dotfiles/
    git clone https://github.com/jeffreytse/zsh-vi-mode ~/.oh-my-zsh/plugins/zsh-vi-mode
    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/themes/powerlevel10k
    ```
-   I dont use any plugin managers right now, and dont want to make plugins as submodules because its seems kinda messy. If any other plugins will appear in .zshrc, oh-my-zsh will tell me to download them manually
+   I dont use any plugin managers right now and dont want to make plugins as submodules. If any other plugins will appear in `.zshrc`, oh-my-zsh will tell me to download them manually
 
-#### tmux
+### tmux
 1) install [tmux](https://github.com/tmux/tmux)
 2) install [tpm](https://github.com/tmux-plugins/tpm)
-   
+
    ```bash
+   mkdir -p ~/.config/tmux/plugins
    git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
    ```
 
-#### rest
+### rest
 2) install vim and nvim
 3) install gdb
 
@@ -46,14 +54,14 @@ git clone https://github.com/pauldub04/dotfiles/
 
    ```bash
    cd dotfiles
-   # --adopt will replace existing files with links to dotfiles, create backups them if needed
-   stow --adopt -v -t ~ .
+   # --adopt will replace existing files with links to dotfiles, create backups if needed
+   stow --adopt --verbose --target ~ common ya
    # -R to restow
-   stow -R -v -t ~ .
+   stow -R --verbose --target ~ common ya
    # -D to delete links
-   stow -D -v -t ~ .
+   stow -D --verbose --target ~ common ya
    ```
-   here .git and README are ignored by stow, but .gitconfig is my actual config
+   here `.git` and `README.md` are ignored by stow, but `.gitconfig` is my actual config
 3) some files might have changed because of `--adopt` leading to overwriting configs. to fix it run
 
    ```bash
@@ -62,32 +70,30 @@ git clone https://github.com/pauldub04/dotfiles/
 
 ## after stow
 
-#### terminal and zsh
+### terminal and zsh
 just reopen terminal to make changes work
 
-#### tmux
+### tmux
 1) load tmux conf
 
    ```bash
    tmux
+   # to use config
    tmux source-file ~/.config/tmux/tmux.conf
    # prefix + I to install tpm plugins
    ```
-2) copy theme to catppuccine
-
-   ```bash
-   cp other/catppuccin_dracula.tmuxtheme ~/.config/tmux/plugins/tmux/themes/
-   ```
-3) again load tmux conf
 
 ### git
-Now using git over ssh instead of login+password. Generated keys with `ssh-keygen`. Using [ssh-agent](https://wiki.archlinux.org/title/SSH_keys#ssh-agent) as agent. Starting it with systemd with `systemctl --user enable --now ssh-agent` without any additional configs. And changing `$SSH_AUTH_SOCK` variable (already done in .zshrc). Then keys are added to agent with `ssh-add` and published to github account seetings. \
+Now I am using git over ssh instead of login+password. Keys are generated with `ssh-keygen` and [ssh-agent](https://wiki.archlinux.org/title/SSH_keys#ssh-agent) is my agent.
+
+I am starting it with systemd with `systemctl --user enable --now ssh-agent` without any additional configs. And changing `$SSH_AUTH_SOCK` variable (already done in `.zshrc`). Then keys are added to agent with `ssh-add` and published to github account seetings.
+
 Links about ssh and git:
 - https://wiki.archlinux.org/title/SSH_keys
 - https://bbs.archlinux.org/viewtopic.php?pid=2022565#p2022565
 - https://github.com/White-Oak/arch-setup-for-dummies/blob/master/setting-up-ssh-agent.md
 
-to test connection to github:
+To test connection to github:
 ```bash
 ssh -T git@github.com
 ```
