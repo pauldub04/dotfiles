@@ -6,11 +6,11 @@ live_config_reload = true
 
 [env]
 TERM = "xterm-256color"
-WINIT_X11_SCALE_FACTOR = "1.0"
+# WINIT_X11_SCALE_FACTOR = "1.0"
 
 [keyboard]
 bindings = [
-    #{ key = "v", mods = "Control", action = "paste" },
+    # { key = "v", mods = "Control", action = "paste" },
     { key = "Backspace", mods = "Control", chars = "\u0017" }
 ]
 
