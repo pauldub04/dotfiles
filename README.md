@@ -14,13 +14,16 @@ sudo apt install tmux vim neovim git xclip stow
 ### terminal
 1) install [alacritty](https://github.com/alacritty/alacritty) \
    version >= 0.13.0 because we need .toml config
-2) install [alacritty themes](https://github.com/alacritty/alacritty-theme)
+   - it can be built from sources
+   - or thry ppa `sudo add-apt-repository ppa:aslatter/ppa -y` 
+   
+3) install [alacritty themes](https://github.com/alacritty/alacritty-theme)
 
    ```bash
    mkdir -p ~/.config/alacritty/themes
    git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
    ```
-3) install some [nerd font](https://www.nerdfonts.com/font-downloads) like JetBrains Nerd
+4) install some [nerd font](https://www.nerdfonts.com/font-downloads) like JetBrains Nerd
 
 ### zsh
 1) install and activate [zsh](https://www.zsh.org/) \
