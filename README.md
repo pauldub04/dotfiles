@@ -15,7 +15,7 @@ sudo apt install tmux vim neovim git xclip stow
 1) install [alacritty](https://github.com/alacritty/alacritty) \
    version >= 0.13.0 because we need .toml config
    - it can be built from sources
-   - or thry ppa `sudo add-apt-repository ppa:aslatter/ppa -y` 
+   - or through ppa `sudo add-apt-repository ppa:aslatter/ppa -y` 
    
 3) install [alacritty themes](https://github.com/alacritty/alacritty-theme)
 
