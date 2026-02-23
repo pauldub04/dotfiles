@@ -1,7 +1,5 @@
 [general]
-import = [
-    "~/.config/alacritty/themes/themes/dracula_plus.toml"
-]
+import = ["~/.config/alacritty/themes/themes/dracula_plus.toml"]
 live_config_reload = true
 
 [env]
@@ -10,8 +8,8 @@ TERM = "xterm-256color"
 
 [keyboard]
 bindings = [
-    # { key = "v", mods = "Control", action = "paste" },
-    { key = "Backspace", mods = "Control", chars = "\u0017" }
+  # { key = "v", mods = "Control", action = "paste" },
+  { key = "Backspace", mods = "Control", chars = "\u0017" },
 ]
 
 [window]
