@@ -8,3 +8,21 @@ if [ -f '/home/pdubnyakov/yandex-cloud/path.bash.inc' ]; then source '/home/pdub
 
 # The next line enables shell command completion for yc.
 if [ -f '/home/pdubnyakov/yandex-cloud/completion.zsh.inc' ]; then source '/home/pdubnyakov/yandex-cloud/completion.zsh.inc'; fi
+
+export ARCADIA=$HOME/arcadia
+export ARCADIA_SDC=$HOME/arcadia/sdg/sdc
+
+export YT_PROXY=kolmogorov
+export YT_POOL=selfdriving-mapping-tmp
+
+export SDC_LOCAL_DEPLOY_PATH=/home/$USER/yandexsdc/local_deploy
+export VH3_DEV=1
+#export VH3_CI=1
+
+alias cda='cd $ARCADIA_SDC'
+alias cdy='cd ~/yandexsdc'
+cda
+
+nwget() {
+  wget --header="Authorization: OAuth `cat /home/$USER/.nirvana/token`" --no-check-certificate -N --content-disposition "$@"
+}
