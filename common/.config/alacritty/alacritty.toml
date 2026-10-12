@@ -10,6 +10,7 @@ TERM = "xterm-256color"
 bindings = [
   # { key = "v", mods = "Control", action = "paste" },
   { key = "Backspace", mods = "Control", chars = "\u0017" },
+  { key = "Return", mods = "Shift", chars = "\u001B\r" }
 ]
 
 [window]
